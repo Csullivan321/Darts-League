@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darts League", "Darts League\Darts League.csproj", "{4D1DF067-BCEA-4166-8184-5E1F9362187E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1DF067-BCEA-4166-8184-5E1F9362187E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1DF067-BCEA-4166-8184-5E1F9362187E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1DF067-BCEA-4166-8184-5E1F9362187E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1DF067-BCEA-4166-8184-5E1F9362187E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1410F401-CA7B-4EC4-834D-984F42958807}
+	EndGlobalSection
+EndGlobal
