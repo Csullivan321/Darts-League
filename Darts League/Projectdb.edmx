@@ -96,25 +96,25 @@
           </AssociationSet>
           <EntitySet Name="Standings" EntityType="DartsdatabaseModel.Standings" />
           <AssociationSet Name="PlayerStandings" Association="DartsdatabaseModel.PlayerStandings">
-            <End Role="Player" EntitySet="Players" />
-            <End Role="Standings" EntitySet="Standings" />
+            <End EntitySet="Players" Role="Player" />
+            <End EntitySet="Standings" Role="Standings" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Standings">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Position" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" Nullable="false" />
-          <Property Name="Won" Type="Int32" Nullable="false" />
-          <Property Name="Loss" Type="Int32" Nullable="false" />
-          <Property Name="Diff" Type="String" Nullable="false" />
+          <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="Position" Nullable="false" Type="Int32" />
+          <Property Name="Name" Nullable="false" Type="String" />
+          <Property Name="Won" Nullable="false" Type="Int32" />
+          <Property Name="Loss" Nullable="false" Type="Int32" />
+          <Property Name="Diff" Nullable="false" Type="String" />
           <NavigationProperty Name="Player" Relationship="DartsdatabaseModel.PlayerStandings" FromRole="Standings" ToRole="Player" />
         </EntityType>
         <Association Name="PlayerStandings">
-          <End Type="DartsdatabaseModel.Player" Role="Player" Multiplicity="1" />
-          <End Type="DartsdatabaseModel.Standings" Role="Standings" Multiplicity="1" />
+          <End Type="DartsdatabaseModel.Player" Multiplicity="1" Role="Player" />
+          <End Type="DartsdatabaseModel.Standings" Multiplicity="1" Role="Standings" />
         </Association>
       </Schema>
     </edmx:ConceptualModels>

@@ -62,6 +62,23 @@ namespace Darts_League
                         select a.Name;
 
             PlayerNameCombo2.ItemsSource = query.ToList();
+
+            
+        }
+
+        private void Standingsdg_Loaded(object sender, RoutedEventArgs e)
+        {
+            var query = from a in db.Standings
+                        select new
+                        {
+                            Position = a.Position,
+                            Name = a.Name,
+                            Won = a.Won,
+                            Loss = a.Loss,
+                            Diff = a.Diff
+
+                        };
+            Standingsdg.ItemsSource = query.ToList();
         }
     }
 }
